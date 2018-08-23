@@ -1,0 +1,510 @@
+@charset "UTF-8";
+html {
+  min-width: 360px;
+  height: 100%;
+  background: #333; }
+
+body {
+  min-width: 360px;
+  height: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'NanumSquare', sans-serif;
+  color: #333;
+  letter-spacing: -1px;
+  background: #333; }
+
+.red {
+  color: #ff4704 !important; }
+
+ul, ol, dl, p {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+.btn {
+  box-shadow: none !important; }
+
+#wrapper {
+  background: #f5f5f5; }
+  #wrapper .container {
+    margin: 0 auto;
+    padding: 20px 20px 30px;
+    width: 360px; }
+    #wrapper .container.refund {
+      padding-bottom: 17px; }
+
+#header {
+  text-align: center; }
+  #header h1 {
+    margin-bottom: 20px; }
+    #header h1 img {
+      margin: 0 auto;
+      display: block;
+      width: 106.333333333px; }
+  #header p {
+    margin-bottom: 20px;
+    color: #827878; }
+
+#footer {
+  background: #333; }
+  #footer .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 360px; }
+  #footer .footer-content {
+    padding: 35px 0;
+    color: #ebebeb;
+    font-size: 11px;
+    line-height: 17px; }
+  #footer h5 {
+    font-size: 14px; }
+  #footer ol ol, #footer ol ul, #footer ul ol, #footer ul ul {
+    margin-left: 5px; }
+  #footer li.dot {
+    position: relative;
+    padding-left: 6px; }
+    #footer li.dot:before {
+      position: absolute;
+      left: 0;
+      content: '·'; }
+    #footer li.dot + li.dot {
+      margin-top: 3px; }
+  #footer li.ast {
+    position: relative;
+    padding-left: 6px; }
+    #footer li.ast:before {
+      position: absolute;
+      left: 0;
+      content: '*'; }
+    #footer li.ast > ol, #footer li.ast ul {
+      margin-left: 0; }
+    #footer li.ast dl {
+      margin-left: 5px; }
+    #footer li.ast dt {
+      font-weight: normal; }
+    #footer li.ast dd {
+      margin-bottom: 0;
+      margin-left: 12px; }
+
+.state {
+  width: 320px; }
+  .state .state-container {
+    background: #fff;
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    padding: 28.6666666667px 24px 20px; }
+  .state .state-footer {
+    height: 7px;
+    background-image: url(../assets/bg_state.gif);
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
+  .state .bar {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background: #424242; }
+  .state h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px; }
+  .state dl {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 13px; }
+  .state dt {
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #827878; }
+  .state dd {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 23.6666666667px; }
+    .state dd p {
+      max-width: 220px;
+      text-align: right; }
+  .state .state-content {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    text-align: right; }
+    .state .state-content p {
+      margin-bottom: 0; }
+    .state .state-content .state-label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-bottom: 21.3333333333px;
+      padding-left: 7px;
+      padding-right: 7px;
+      height: 22.6666666667px;
+      line-height: 22.6666666667px;
+      border: 1px solid #b7b7b7;
+      font-size: 13px;
+      font-weight: 800;
+      color: #b7b7b7;
+      letter-spacing: 0; }
+      .state .state-content .state-label.red {
+        border-color: #ff4704; }
+    .state .state-content .state-title {
+      height: 46.6666666667px;
+      line-height: 46.6666666667px; }
+      .state .state-content .state-title .text {
+        font-size: 36.6666666667px;
+        line-height: 46.6666666667px;
+        color: rgba(0, 0, 0, 0.1);
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2), 0 0 0 rgba(0, 0, 0, 0.2);
+        font-weight: 800; }
+      .state .state-content .state-title .price {
+        font-size: 46.6666666667px;
+        line-height: 46.6666666667px;
+        color: #ff4704;
+        font-weight: 800; }
+        .state .state-content .state-title .price span {
+          font-size: 40px; }
+        .state .state-content .state-title .price small {
+          font-size: 26.6666666667px;
+          font-weight: 800; }
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-top: 1px solid #d2d2d2;
+  border-spacing: 0; }
+  table th, table td {
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    color: #827878; }
+  table thead th {
+    font-size: 11px;
+    height: 30px; }
+  table tbody th, table tbody td {
+    font-size: 14px;
+    height: 50px; }
+    table tbody th b, table tbody td b {
+      font-weight: 800; }
+
+.history {
+  margin-top: 14px; }
+  .history h4 {
+    margin-bottom: 0;
+    padding: 17px 7px;
+    font-size: 16px;
+    color: #818181; }
+  .history.usage table th:nth-of-type(1), .history.usage table td:nth-of-type(1) {
+    width: 70px; }
+  .history.usage table th:nth-of-type(2), .history.usage table td:nth-of-type(2) {
+    width: 135px; }
+  .history.usage table th:nth-of-type(3), .history.usage table td:nth-of-type(3) {
+    text-align: right;
+    padding-right: 32px; }
+  .history.exchange table th:nth-of-type(1), .history.exchange table td:nth-of-type(1) {
+    padding-left: 20px;
+    width: 110px;
+    text-align: left; }
+  .history.exchange table th:nth-of-type(2), .history.exchange table td:nth-of-type(2) {
+    padding-right: 27px;
+    text-align: right; }
+
+.alert-modal .modal-dialog {
+  margin: 50% auto 0;
+  max-width: 320px;
+  height: 213px; }
+.alert-modal .modal-content {
+  border: 0 !important;
+  border-radius: 0; }
+.alert-modal .modal-body {
+  display: table;
+  height: 165px; }
+  .alert-modal .modal-body p {
+    display: table-cell;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle; }
+.alert-modal .modal-footer {
+  padding: 0;
+  border: 0; }
+  .alert-modal .modal-footer .btn {
+    height: 48px;
+    border-radius: 0;
+    background: #ff4704;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800; }
+    .alert-modal .modal-footer .btn:active {
+      background: #e1440b; }
+
+.refund-info,
+.refund-account {
+  margin-top: 35px; }
+  .refund-info .bar,
+  .refund-account .bar {
+    display: block;
+    margin-left: 8px;
+    width: 15px;
+    height: 1px;
+    background: #424242; }
+  .refund-info h4,
+  .refund-account h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 16px;
+    line-height: 28px; }
+
+.refund-info table {
+  table-layout: fixed; }
+  .refund-info table th {
+    width: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 11px;
+    text-align: left;
+    color: #827878; }
+  .refund-info table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 14px;
+    text-align: right; }
+    .refund-info table td p {
+      color: #333; }
+      .refund-info table td p .price {
+        font-size: 20px;
+        font-weight: 800; }
+        .refund-info table td p .price small {
+          font-size: 14px;
+          font-weight: 800; }
+
+.refund-account .account-info {
+  padding: 23px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 1px 1px #e7e7e7; }
+  .refund-account .account-info ::placeholder {
+    color: #bbb;
+    font-weight: normal; }
+  .refund-account .account-info ::-webkit-input-placeholder {
+    color: #bbb;
+    font-weight: normal; }
+  .refund-account .account-info ::-moz-placeholder {
+    color: #bbb;
+    font-weight: normal; }
+  .refund-account .account-info :-ms-input-placeholder {
+    color: #bbb;
+    font-weight: normal; }
+  .refund-account .account-info :-moz-placeholder {
+    color: #bbb;
+    font-weight: normal; }
+  .refund-account .account-info dt {
+    margin-bottom: 5px;
+    font-size: 11px;
+    color: #827878; }
+  .refund-account .account-info dd {
+    margin-bottom: 30px;
+    height: 40px; }
+    .refund-account .account-info dd:last-child {
+      margin-bottom: 0; }
+  .refund-account .account-info input[type="text"],
+  .refund-account .account-info input[type="number"] {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 800; }
+  .refund-account .account-info .form-group {
+    border-bottom: 1px solid #d2d2d2; }
+  .refund-account .account-info .btn-check-acc {
+    width: 73.3333333333px;
+    height: 26px;
+    padding: 0;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 0;
+    border-color: #333;
+    font-weight: 800;
+    color: #333;
+    background: #fff;
+    border: 1px solid #333; }
+    .refund-account .account-info .btn-check-acc:disabled {
+      color: #b6b6b6;
+      background: #fff;
+      border: 1px solid #d2d2d2; }
+    .refund-account .account-info .btn-check-acc:active {
+      background: #e1440b;
+      border-color: #e1440b;
+      color: #fff; }
+  .refund-account .account-info .bank .form-group {
+    position: relative; }
+    .refund-account .account-info .bank .form-group .arrow {
+      position: absolute;
+      top: 17px;
+      right: 6px;
+      width: 10px;
+      height: 5px;
+      background-image: url(../assets/ico_arrow_down.gif);
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .refund-account .account-info .account .form-group {
+    position: relative;
+    padding-right: 75px; }
+    .refund-account .account-info .account .form-group .btn-check-acc {
+      position: absolute;
+      top: 7px;
+      right: 0; }
+
+.btn-area {
+  margin-top: 17px; }
+  .btn-area .btn {
+    height: 48px;
+    background: #ff4704;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 0; }
+    .btn-area .btn:disabled {
+      opacity: 1;
+      background: #b7b7b7; }
+    .btn-area .btn:active {
+      background: #e1440b; }
+
+.bank-modal .modal-dialog {
+  margin: 0 auto;
+  max-width: 360px;
+  width: 360px;
+  height: 100%; }
+.bank-modal .modal-content {
+  position: relative;
+  padding-top: 115px;
+  padding-bottom: 47px;
+  border-radius: 0;
+  border: 0;
+  height: 100%; }
+.bank-modal .modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115px;
+  padding: 0;
+  flex-direction: column;
+  border-bottom: 1px solid #d2d2d2; }
+  .bank-modal .modal-header h5 {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 67px;
+    font-size: 16px;
+    font-weight: 800;
+    border-bottom: 1px solid #d2d2d2;
+    line-height: 66px; }
+  .bank-modal .modal-header .close {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    font-size: 30px;
+    background-image: url(../assets/ico_close.gif);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 50% 50%;
+    opacity: 1; }
+    .bank-modal .modal-header .close:hover, .bank-modal .modal-header .close:focus {
+      opacity: 1; }
+  .bank-modal .modal-header .tabs {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    background: #f5f5f5; }
+    .bank-modal .modal-header .tabs li {
+      flex: 1; }
+      .bank-modal .modal-header .tabs li a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-decoration: none; }
+        .bank-modal .modal-header .tabs li a span {
+          display: block;
+          width: 100%;
+          text-align: center;
+          color: #818181;
+          line-height: 14px; }
+        .bank-modal .modal-header .tabs li a.active span {
+          font-weight: 800;
+          color: #333; }
+      .bank-modal .modal-header .tabs li + li a span {
+        border-left: 1px solid #b7b7b7; }
+.bank-modal .modal-body {
+  overflow: auto;
+  height: 100%;
+  padding: 0; }
+  .bank-modal .modal-body .bank-list li {
+    float: left;
+    width: 33.33333334%;
+    height: 61px;
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2; }
+    .bank-modal .modal-body .bank-list li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      text-align: center;
+      line-height: 56px;
+      font-size: 12px;
+      color: #333;
+      text-decoration: none; }
+      .bank-modal .modal-body .bank-list li a.active {
+        border: 2px solid #ff4704;
+        background-color: #ffece5; }
+    .bank-modal .modal-body .bank-list li:nth-of-type(3n) {
+      border-right: 0; }
+.bank-modal .modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  border-top: 0;
+  width: 100%;
+  height: 48px; }
+  .bank-modal .modal-footer .btn {
+    height: 48px;
+    background: #ff4704;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none; }
+    .bank-modal .modal-footer .btn:disabled {
+      opacity: 1;
+      background: #b7b7b7; }
+    .bank-modal .modal-footer .btn:active {
+      background: #e1440b; }
+
+/*# sourceMappingURL=style.css.map */

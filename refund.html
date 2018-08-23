@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- 나눔스퀘어 웹폰트 -->
+    <link rel="stylesheet" href="./assets/nanumsquare.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./assets/style.css">
+    
+    <title>환불계좌 정보입력</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container refund">
+            <header id="header">
+                <h1><img src="./assets/logo.png" alt="YES COUPON"></h1>
+                <p>아래 입력란에 환불 받으실 계좌정보를 입력해 주세요.</p>
+            </header>
+            <section class="refund-info">
+                <span class="bar"></span>
+                <h4>환불 내역</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>상품명</th>
+                            <td><p>세븐일레븐 10,000원권 외 2건 세븐일레븐 10,000원권 외 2건</p></td>
+                        </tr>
+                        <tr>
+                            <th>총 환불금액</th>
+                            <td><p><b class="price red">24,300<small>원</small></b></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <form id="refund-form" action="#" method="post">
+            <section class="refund-account">
+                <span class="bar"></span>
+                <h4>환불 계좌 정보</h4>
+                
+                <div class="account-info">
+                    <dl>
+                        <dt class="bank">은행</dt>
+                        <dd class="bank">
+                            <div class="form-group">
+                                <input type="text" placeholder="은행선택" data-toggle="modal" data-target="#select-bank" required readonly>
+                                <span class="arrow"></span>
+                            </div>
+                        </dd>
+                        <dt class="account">계좌번호</dt>
+                        <dd class="account">
+                            <div class="form-group">
+                                <input type="number" placeholder="- 없이 숫자만 입력해 주세요." required data-validation="length numeric" data-validation-length="min10">
+                                <button class="btn-check-acc" disabled>계좌확인</button><!-- 계좌가 정상적으로 입력되면 confirmed 클래스 사용 -->
+                            </div>
+                        </dd>
+                        <dt class="holder">예금주</dt>
+                        <dd class="holder">
+                            <input type="text" required readonly>
+                        </dd>
+                    </dl>
+                </div>
+                
+            </section>
+            <div class="btn-area">
+                <button class="btn btn-block" type="submit" disabled>입력 완료</button>
+                <!-- 입력항목이 모두 이상없이 입력되면, disabled 속성 삭제 -->
+            </div>
+            </form>
+            
+            <!-- 경고창 확인용: 개발 후 지워주세요 -->
+            <a href="#alert-1" data-toggle="modal">경고창 #1 은행 미선택 팝업</a><br>
+            <a href="#alert-2" data-toggle="modal">경고창 #2 계좌번호 입력 오류 팝업</a><br>
+            <a href="#alert-3" data-toggle="modal">경고창 #3 입력 완료 안내 팝업</a><br>
+            <a href="#alert-4" data-toggle="modal">경고창 #4 중복 신청 안내</a><br>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h5>환불 및 기타문의</h5>
+                <ul>
+                    <li class="ast">환불은 영업일 기준 14일 이내 환불 처리 됩니다. (공휴일 제외)</li>
+                    <li class="ast">
+                        환불 규정
+                        <ol>
+                            <li>
+                                1.금액권 환불처리
+                                <ol>
+                                    <li>
+                                        1) 최초 유효기간 내
+                                        <dl>
+                                            <dt>- 1만원 이하 상품 :</dt>
+                                            <dd>최초 유효기간 내 액면가의 80% 이상 사용 시 잔액 환불 가능</dd>
+                                            <dt>- 1만원 초과 상품 :</dt>
+                                            <dd>최초 유효기간 내 액면가의 60% 이상 사용 시 잔액 환불 가능</dd>
+                                        </dl>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                2.교환권 환불처리
+                                <ol>
+                                    <li>1) 최초 유효기간 경과 후 5년 내 결제금액의 90% 환불 가능</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="ast">옴니텔 고객센터 : 1588-5639</li>
+                    <li class="ast">영업시간 : 오전 9시 ~ 18시 (공휴일 제외)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal bank-modal" id="select-bank" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="닫기">
+                        <span class="sr-only">닫기</span>
+                    </button>
+                    <h5 class="modal-title">은행선택</h5>
+                    <ul class="nav tabs" role="tablist">
+                        <li>
+                            <a class="active" data-toggle="tab" href="#bank-list"><span>은행</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#stock-list"><span>증권사</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bank-list" role="tabpanel">
+                            <ul class="bank-list">
+                                <li><a href="#">우리</a></li>
+                                <li><a href="#">국민</a></li>
+                                <li><a href="#">기업</a></li>
+                                
+                                <li><a href="#">농협</a></li>
+                                <li><a href="#">신한(조흥)</a></li>
+                                <li><a href="#">KEB하나</a></li>
+                                
+                                <li><a href="#">한국씨티(한미)</a></li>
+                                <li><a href="#">SC(제일)</a></li>
+                                <li><a href="#">경남</a></li>
+                                
+                                <li><a href="#">광주</a></li>
+                                <li><a href="#">대구</a></li>
+                                <li><a href="#">도이치</a></li>
+                                
+                                <li><a href="#">부산</a></li>
+                                <li><a href="#">비엔피파리바</a></li>
+                                <li><a href="#">산림조합</a></li>
+                                
+                                <li><a href="#">산업</a></li>
+                                <li><a href="#">상호저축</a></li>
+                                <li><a href="#">새마을금고</a></li>
+                                
+                                <li><a href="#">수출입</a></li>
+                                <li><a href="#">수협</a></li>
+                                <li><a href="#">신협</a></li>
+                                
+                                <li><a href="#">우체국</a></li>
+                                <li><a href="#">전북</a></li>
+                                <li><a href="#">제주</a></li>
+                                
+                                <li><a href="#">중국공상</a></li>
+                                <li><a href="#">카카오뱅크</a></li>
+                                <li><a href="#">케이뱅크</a></li>
+                                
+                                <li><a href="#">펀드온라인코리아</a></li>
+                                <li><a href="#">BOA</a></li>
+                                <li><a href="#">HSBC</a></li>
+                                
+                                <li><a href="#">JP모간체이스</a></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="stock-list" role="tabpanel">
+                            <ul class="bank-list">
+                                <li><a href="#">NH투자</a></li>
+                                <li><a href="#">교보</a></li>
+                                <li><a href="#">대신</a></li>
+                                
+                                <li><a href="#">메리츠</a></li>
+                                <li><a href="#">미래에셋대우</a></li>
+                                <li><a href="#">부국</a></li>
+                                
+                                <li><a href="#">삼성</a></li>
+                                <li><a href="#">신영</a></li>
+                                <li><a href="#">신한금융투자</a></li>
+                                
+                                <li><a href="#">아이엠투자</a></li>
+                                <li><a href="#">유안타</a></li>
+                                <li><a href="#">유진투자</a></li>
+                                
+                                <li><a href="#">이베스트투자</a></li>
+                                <li><a href="#">케이프투자</a></li>
+                                <li><a href="#">키움</a></li>
+                                
+                                <li><a href="#">하나금융투자</a></li>
+                                <li><a href="#">하이투자</a></li>
+                                <li><a href="#">한국투자</a></li>
+                                
+                                <li><a href="#">한화투자</a></li>
+                                <li><a href="#">현대차</a></li>
+                                <li><a href="#">DB금융투자</a></li>
+                                
+                                <li><a href="#">KB</a></li>
+                                <li><a href="#">KTB투자</a></li>
+                                <li><a href="#">SK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-select btn-block" disabled>선택</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 은행 미선택 팝업 -->
+    <div class="modal alert-modal" id="alert-1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>환불 받으실 은행을<br>선택해 주세요.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 계좌번호 입력 오류 팝업 -->
+    <div class="modal alert-modal" id="alert-2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>계좌번호 및 예금주 정보가<br>일치하지 않습니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 입력 완료 안내 팝업 -->
+    <div class="modal alert-modal" id="alert-3" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>환불 받으실 계좌 정보가<br>접수되었습니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 중복 신청 안내 -->
+    <div class="modal alert-modal" id="alert-4" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>이미 해당 상품에 대한 환불 신청이<br>접수 되었습니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script>
+    (function($) {
+        
+        //$("#alert-1, #alert-2, #alert-3, #alert-4").modal('show');
+        
+        // 은행선택 레이어팝업: 은행 클릭 시
+        $(document).on("click", "#select-bank .bank-list a", function() {
+            $(".bank-list a").removeClass("active");
+            $(this).addClass("active");
+            $("#select-bank .btn-select").removeAttr('disabled');
+        });
+        
+        // 은행선택 레이어팝업: 은행 선택 후 하단 선택버튼 클릭 시
+        $(document).on("click", "#select-bank .btn-select", function() {
+            // 선택된 금융사가 있는지 체크
+            if ($("#select-bank .bank-list a.active").length > 0) {
+                // 부모창에 입력 & 모달창 닫기
+                $(".account-info .bank input").val($("#select-bank .bank-list a.active").text());
+                $("#select-bank").modal('hide');
+            }
+        });
+        
+    })(jQuery);
+    </script>
+</body>
+</html>
