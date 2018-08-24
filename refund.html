@@ -49,7 +49,7 @@
                         <dt class="bank">은행</dt>
                         <dd class="bank">
                             <div class="form-group">
-                                <input type="text" placeholder="은행선택" data-toggle="modal" data-target="#select-bank" required readonly>
+                                <button type="button" class="btn btn-link btn-block btn-select-bank" data-toggle="modal" data-target="#select-bank">은행선택</button>
                                 <span class="arrow"></span>
                             </div>
                         </dd>
@@ -119,6 +119,7 @@
         </div>
     </footer>
     
+    <!-- 은행 선택 팝업 -->
     <div class="modal bank-modal" id="select-bank" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -229,7 +230,7 @@
         </div>
     </div>
     
-    <!-- 은행 미선택 팝업 -->
+    <!-- 경고창: 은행 미선택 팝업 -->
     <div class="modal alert-modal" id="alert-1" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -243,7 +244,7 @@
         </div>
     </div>
     
-    <!-- 계좌번호 입력 오류 팝업 -->
+    <!-- 경고창: 계좌번호 입력 오류 팝업 -->
     <div class="modal alert-modal" id="alert-2" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -257,7 +258,7 @@
         </div>
     </div>
     
-    <!-- 입력 완료 안내 팝업 -->
+    <!-- 경고창: 입력 완료 안내 팝업 -->
     <div class="modal alert-modal" id="alert-3" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -271,7 +272,7 @@
         </div>
     </div>
     
-    <!-- 중복 신청 안내 -->
+    <!-- 경고창: 중복 신청 안내 -->
     <div class="modal alert-modal" id="alert-4" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -308,7 +309,9 @@
             // 선택된 금융사가 있는지 체크
             if ($("#select-bank .bank-list a.active").length > 0) {
                 // 부모창에 입력 & 모달창 닫기
-                $(".account-info .bank input").val($("#select-bank .bank-list a.active").text());
+                $(".account-info .bank .btn")
+                    .addClass('done')
+                    .text($("#select-bank .bank-list a.active").text());
                 $("#select-bank").modal('hide');
             }
         });
