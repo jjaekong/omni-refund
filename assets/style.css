@@ -358,14 +358,14 @@ table {
     background: #fff;
     border: 1px solid #333;
     line-height: 26px; }
-    .refund-account .account-info .btn-check-acc:disabled {
-      color: #b6b6b6;
-      background: #fff;
-      border: 1px solid #d2d2d2; }
     .refund-account .account-info .btn-check-acc:active {
       background: #e1440b;
       border-color: #e1440b;
       color: #fff; }
+    .refund-account .account-info .btn-check-acc:disabled {
+      color: #b6b6b6;
+      background: #fff;
+      border: 1px solid #d2d2d2; }
   .refund-account .account-info .bank .form-group {
     position: relative; }
     .refund-account .account-info .bank .form-group .btn-select-bank {
@@ -405,11 +405,11 @@ table {
     font-weight: 800;
     color: #fff;
     border-radius: 0; }
+    .btn-area .btn:active {
+      background: #e1440b; }
     .btn-area .btn:disabled {
       opacity: 1;
       background: #b7b7b7; }
-    .btn-area .btn:active {
-      background: #e1440b; }
 
 .bank-modal .modal-dialog {
   margin: 0 auto;
@@ -524,10 +524,39 @@ table {
     border-radius: 0;
     border: 0;
     box-shadow: none; }
+    .bank-modal .modal-footer .btn:active {
+      background: #e1440b; }
     .bank-modal .modal-footer .btn:disabled {
       opacity: 1;
       background: #b7b7b7; }
-    .bank-modal .modal-footer .btn:active {
-      background: #e1440b; }
+
+section.error {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 60px; }
+  section.error h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 43px;
+    font-weight: 800; }
+  section.error .bar {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background: #424242; }
+  section.error p {
+    line-height: 25px;
+    margin-top: 25px; }
+  section.error dl {
+    margin-top: 25px; }
+    section.error dl dt, section.error dl dd {
+      font-weight: 800;
+      line-height: 25px; }
+    section.error dl dd {
+      color: #ff4704; }
+
+.error-footer .footer-content {
+  padding-left: 15px !important;
+  padding-right: 15px !important; }
 
 /*# sourceMappingURL=style.css.map */

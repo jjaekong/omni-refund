@@ -13,37 +13,39 @@
     
     <link rel="stylesheet" href="./assets/style.css">
     
-    <title>상품권 잔액정보</title>
-    
-    <style>
-        .file-list li { line-height: 2em; }
-        .file-list ul { margin-left: 10px; }
-    </style>
+    <title>요청한 페이지를 찾을 수 없습니다.</title>
 </head>
 <body>
     <div id="wrapper">
         <div class="container">
             <header id="header">
                 <h1><img src="./assets/logo.png" alt="YES COUPON"></h1>
-                <p>퍼블리싱 파일목록입니다.</p>
             </header>
-            <ul class="file-list">
-                <li><a href="voucher.html" target="_blank">모바일 발송용 <u>상품권</u> 잔액화면</a></li>
-                <li>
-                    <a href="exchange.html" target="_blank">모바일 발송용 <u>교환권</u> 사용화면</a>
-                    <ul>
-                        <li><a href="exchange_available.html" target="_blank">ㄴ 사용 가능</a></li>
-                        <li><a href="exchange_redeemed.html" target="_blank">ㄴ 교환 완료</a></li>
-                        <li><a href="exchange_expired.html" target="_blank">ㄴ 기간 만료</a></li>
-                        <li><a href="exchange_canceled.html" target="_blank">ㄴ 주문 취소</a></li>
-                    </ul>
-                </li>
-                <li><a href="refund.html" target="_blank"><u>환불계좌</u> 입력화면</a></li>
-                <li><a href="checking_system.html" target="_blank">시스템 점검</a></li>
-                <li><a href="404.html" target="_blank">페이지를 찾을 수 없음</a></li>
-            </ul>
+            <section class="error">
+                <h2>요청한 페이지를<br>찾을 수 없습니다.</h2>
+                <span class="bar"></span>
+                <p>
+                    존재하지 않는 주소를 입력하셨거나,<br>
+                    요청하신 페이지의 주소가 변경, 삭제되어<br>
+                    찾을 수 없습니다. 
+                </p>
+                <p>
+                    입력하신 주소가 정확한지<br>
+                    다시 한 번 확인해 주시기 바랍니다.
+                </p>
+            </section>
         </div>
     </div>
+    <footer id="footer" class="error-footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul>
+                    <li class="dot">옴니텔 고객센터: <b>1588-5639</b></li>
+                    <li class="dot">영업시간: 오전 9시 ~ 18시(공휴일 제외)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
