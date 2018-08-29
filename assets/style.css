@@ -555,6 +555,9 @@ section.error {
     section.error dl dd {
       color: #ff4704; }
 
+.error-container {
+  padding-bottom: 50px !important; }
+
 .error-footer .footer-content {
   padding-left: 15px !important;
   padding-right: 15px !important; }
