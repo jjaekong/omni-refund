@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- 교환권 상태값 meta tags -->
-    <title>사용 완료된 상태입니다.</title>
-    <meta name="description" content="해당 상품이 정상적으로 교환되었습니다.">
-    <meta property="og:title" content="사용 완료된 상태입니다.">
-    <meta property="og:description" content="해당 상품이 정상적으로 교환되었습니다.">
+    <title>기간 만료된 상태입니다.</title>
+    <meta name="description" content="해당 금액권의 유효기간이 만료되었습니다.">
+    <meta property="og:title" content="기간 만료된 상태입니다.">
+    <meta property="og:description" content="해당 금액권의 유효기간이 만료되었습니다.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://balance.coufun.kr/사용자파라미터값">
     <meta property="og:image" content="http://openmarket49.iskra.kr/omni_refund/assets/yescoupon_barcode.jpg"><!-- 실제 이미지가 업로드된 URL로 변경해 주세요 -->
@@ -27,20 +27,25 @@
         <div class="container">
             <header id="header">
                 <h1><img src="./assets/logo.png" alt="YES COUPON"></h1>
-                <p>고객님의 모바일 교환권 사용 정보입니다</p>
+                <p>고객님의 모바일 상품권 잔액 정보입니다</p>
             </header>
             <section class="state">
                 <div class="state-container">
                     <span class="bar"></span>
                     <h4>상품 상태</h4>
                     <div class="state-content">
-                        <p class="state-label">REDEEMED</p>
-                        <p class="state-title"><b class="text">교환완료</b></p>
+                        <p class="state-title"><b class="price">7<span>,</span>400<small>원</small></b></p>
                     </div>
                     <dl>
                         <dt>상품명</dt>
                         <dd>
-                            <p>빙그레 바나나맛 우유</p>
+                            <p>세븐일레븐 10,000원권</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>미사용 금액</dt>
+                        <dd>
+                            <p>4,300원</p>
                         </dd>
                     </dl>
                     <dl>
@@ -50,23 +55,26 @@
                 </div>
                 <div class="state-footer"></div>
             </section>
-            <section class="exchange history">
+            <section class="usage history">
                 <h4>사용 내역</h4>
                 <table>
                     <thead>
                         <tr>
-                            <th>교환일자</th>
-                            <th>교환지점</th>
+                            <th>No.</th>
+                            <th>사용일자</th>
+                            <th>사용금액</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>1</td>
                             <td><p>2018.08.20</p></td>
-                            <td><p>세븐일레븐 석촌점</p></td>
+                            <td><p><b class="red">500원</b></p></td>
                         </tr>
                         <tr>
-                            <td><p>2018.08.19</p></td>
-                            <td><p>세븐일레븐 석촌점</p></td>
+                            <td>1</td>
+                            <td><p>2018.08.20</p></td>
+                            <td><p ><b class="red">500원</b></p></td>
                         </tr>
                     </tbody>
                 </table>
@@ -77,8 +85,8 @@
         <div class="container">
             <div class="footer-content">
                 <ul>
-                    <li class="dot">반드시 교환 전 직원에게 상품권을 제시해 주셔야 사용이 가능합니다.</li>
-                    <li class="dot">교환 시 부족한 금액은 다른 결제수단(현금,신용카드)과 복수결제 가능합니다.</li>
+                    <li class="dot">반드시 결제 전 직원에게 상품권을 제시해 주셔야 사용이 가능합니다.</li>
+                    <li class="dot">결제 시 부족한 금액은 다른 결제수단(현금,신용카드)과 복수결제 가능합니다.</li>
                 </ul>
             </div>
         </div>
