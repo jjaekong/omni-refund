@@ -741,28 +741,30 @@ section.error {
 
 /* 19-01-31 추가: 개인정보 동의 */
 section.terms {
-    border-bottom: 2px solid #e7e7e7;
     .terms-body {
         margin-bottom: 15px;
-        padding: 25px;
-        background: #fff;
-        border: 1px solid #d2d2d2;
-        line-height: 23px;
-        h2 {
-            margin-bottom: 0;
-            font-size: 17px;
-            color: #003333;
-            font-weight: bold;
-        }
-        h4 {
-            margin-top: 20px;
-            margin-bottom: 5px;
-            font-size: 16px;
-            color: #003333;
-        }
-        p {
-            font-size: 14px;
-            color: #827878;
+        border-bottom: 2px solid #e7e7e7;
+        > div {
+            padding: 25px;
+            background: #fff;
+            border: 1px solid #d2d2d2;
+            line-height: 23px;
+            h2 {
+                margin-bottom: 0;
+                font-size: 17px;
+                color: #003333;
+                font-weight: bold;
+            }
+            h4 {
+                margin-top: 20px;
+                margin-bottom: 5px;
+                font-size: 16px;
+                color: #003333;
+            }
+            p {
+                font-size: 14px;
+                color: #827878;
+            }
         }
     }
     .terms-footer {
