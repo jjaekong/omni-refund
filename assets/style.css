@@ -567,7 +567,7 @@ section.terms {
   border-bottom: 2px solid #e7e7e7; }
   section.terms .terms-body {
     margin-bottom: 15px;
-    padding: 25px 25px 50px;
+    padding: 25px;
     background: #fff;
     border: 1px solid #d2d2d2;
     line-height: 23px; }
@@ -592,12 +592,13 @@ section.terms {
     font-size: 16px;
     font-weight: bold;
     height: 50px;
-    line-height: 50px; }
+    line-height: 50px;
+    transition: none; }
   section.terms .terms-footer .btn-agree {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1f2032;
+    background: #b7b7b7;
     color: #fff; }
     section.terms .terms-footer .btn-agree .icon-check {
       margin-right: 10px;
@@ -609,10 +610,13 @@ section.terms {
       background-position: 50% 50%; }
   section.terms .terms-footer .btn-next {
     display: none;
+    margin-top: 10px;
     background: #ff4704;
     color: #fff; }
   section.terms.agree .btn-agree {
-    display: none; }
+    background: #1f2032; }
+    section.terms.agree .btn-agree .icon-check {
+      background-image: url(./ico_check_on.gif); }
   section.terms.agree .btn-next {
     display: block; }
 
