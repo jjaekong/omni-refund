@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko" prefix="og: http://ogp.me/ns#">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 교환권 상태값 meta tags -->
+    <title>환불계좌 입력 안내입니다.</title>
+    <meta name="description" content="아래링크를 클릭하여 환불계좌를 입력해 주세요.">
+    <meta property="og:title" content="환불계좌 입력 안내입니다.">
+    <meta property="og:description" content="아래링크를 클릭하여 환불계좌를 입력해 주세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://openmarket49.iskra.kr/omni_refund">
+    <meta property="og:image" content="http://openmarket49.iskra.kr/omni_refund/assets/yescoupon_refund.jpg"><!-- 실제 이미지가 업로드된 URL로 변경해 주세요 -->
+    
+    <!-- 나눔스퀘어 웹폰트 -->
+    <link rel="stylesheet" href="./assets/nanumsquare.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container refund">
+            <header id="header">
+                <h1><img src="./assets/logo.png" alt="YES COUPON"></h1>
+                <p>환불 진행을 위해 고객님의 휴대폰 번호로 인증해 주세요.</p>
+            </header>
+            
+            <form id="cert-form" action="#" method="post">
+            <section class="refund-cert">
+                <span class="bar"></span>
+                <h4>휴대폰 번호 인증</h4>
+                
+                <div class="cert-info">
+                    <dl>
+                        <!-- <dt class="bank">은행</dt>
+                        <dd class="bank">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-link btn-block btn-select-bank" data-toggle="modal" data-target="#select-bank">은행선택</button>
+                                <span class="arrow"></span>
+                            </div>
+                        </dd> -->
+                        <dt class="mobile">휴대폰 번호</dt>
+                        <dd class="mobile">
+                            <div class="form-group">
+                                <input type="tel" placeholder="- 없이 숫자만 입력해 주세요." name="mobile" required>
+                                <button type="button" class="btn-request-cert" disabled>인증번호 요청</button><!-- 휴대폰 번호가 정상적으로 입력되면, disabled 속성 삭제 -->
+                            </div>
+                        </dd>
+                        <dt class="cert-num">인증번호</dt>
+                        <dd class="cert-num">
+                            <div class="form-group">
+                                <input type="number" name="certNum" required>
+                                <span class="timeout">02:59</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                
+            </section>
+            <div class="btn-area">
+                <button class="btn btn-block btn-cert" type="submit" disabled>인증하기</button>
+                <!-- 인증번호가 입력완료 되면, disabled 속성 삭제 -->
+            </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h5>환불 및 기타문의</h5>
+                <ul>
+                    <li class="ast">환불은 영업일 기준 14일 이내 환불 처리 됩니다. (공휴일 제외)</li>
+                    <li class="ast">
+                        환불 규정
+                        <ol>
+                            <li>
+                                1.금액권 환불처리
+                                <ol>
+                                    <li>
+                                        1) 최초 유효기간 내
+                                        <dl>
+                                            <dt>- 1만원 이하 상품 :</dt>
+                                            <dd>최초 유효기간 내 구매액의 80% 이상 사용 시 잔액 환불 가능</dd>
+                                            <dt>- 1만원 초과 상품 :</dt>
+                                            <dd>최초 유효기간 내 구매액의 60% 이상 사용 시 잔액 환불 가능</dd>
+                                        </dl>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                2.교환권 환불처리
+                                <ol>
+                                    <li>1) 최초 유효기간 경과 후 5년 내 결제금액의 90% 환불 가능</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="ast">옴니텔 고객센터 : 1588-5639</li>
+                    <li class="ast">영업시간 : 오전 9시 ~ 18시 (공휴일 제외)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        (function($) {
+            
+            // 전화번호 유효성 검사, 유효하다면 인증번호 요청 버튼 활성화
+            $(document).on("keyup", "input[name='mobile']", function() {
+
+                // 11자리 이상일 경우 입력제한
+                if ( $(this).val().length > 10) {
+                    $(this).val(
+                        $(this).val().slice(0, 11)
+                    )
+                }
+
+                // 숫자만 입력했는지 유효성 체크
+                if ((/^[0-9]{10,11}$/g).test($(this).val())) {
+                    $('#cert-form .btn-request-cert').removeAttr('disabled')
+                } else {
+                    $('#cert-form .btn-request-cert').attr('disabled', true)
+                }
+
+            })
+
+            // 인증번호 요청 버튼 클릭 시, 인증번호 입력창으로 포커스를 이동
+            $(document).on("click", "#cert-form .btn-request-cert", function() {
+                $("input[name='certNum']").focus()
+            })
+
+            // 인증번호 유효성 검사, 유효하다면 인증하기 버튼 활성화
+            $(document).on("keyup", "input[name='certNum']", function() {
+
+                // 6자리 이상일 경우 입력제한
+                if ( $(this).val().length > 6) {
+                    $(this).val(
+                        $(this).val().slice(0, 6)
+                    )
+                }
+
+                // 숫자만 입력했는지 유효성 체크
+                if ((/^[0-9]{6}$/g).test($(this).val())) {
+                    $('#cert-form .btn-cert').removeAttr('disabled')
+                } else {
+                    $('#cert-form .btn-cert').attr('disabled', true)
+                }
+
+            })
+
+        })(jQuery);
+    </script>
+
+</body>
+</html>
